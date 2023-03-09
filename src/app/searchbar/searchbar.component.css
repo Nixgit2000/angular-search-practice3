@@ -1,0 +1,6 @@
+#searchbar {
+    height: 7vh;
+    min-height: 40px;
+    width: 100vw;
+    background-color: rgb(76, 76, 76);
+}

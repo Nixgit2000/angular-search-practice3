@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { CardAreaComponent } from './card-area/card-area.component';
 import { CardsComponent } from './card-area/cards/cards.component';
+import { SearchPipe } from './search.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,12 @@ import { CardsComponent } from './card-area/cards/cards.component';
     HeaderComponent,
     SearchbarComponent,
     CardAreaComponent,
-    CardsComponent
+    CardsComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

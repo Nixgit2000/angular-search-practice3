@@ -1,1 +1,6 @@
-<p>cards works!</p>
+<div style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+ <ul  id="ul" *ngFor="let dataPoints of data">
+    <div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+    <div id="title"><li>{{dataPoints.title}}</li></div>
+    <div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
