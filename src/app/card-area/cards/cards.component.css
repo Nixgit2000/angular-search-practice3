@@ -9,11 +9,11 @@
     height: 100%;
 }
 ul {
-    margin: auto;
+    margin: 1vh;
     margin-top: 1vh;
     border: 1px solid rgb(174, 174, 174);
     box-shadow: 2px 2px rgb(223, 223, 223);
-    border-radius: 1%;
+    border-radius: 1.5%;
 }
 #img-container {
     overflow: hidden;
@@ -45,6 +45,7 @@ ul {
     font-family: arial;
     color: grey;
     height: 3vh;
+    min-height: 30px;
     width: 40vw;
     display: flex;
     justify-content: center;
@@ -68,11 +69,11 @@ ul {
     height: 100%;
 }
 ul {
-    margin: auto;
+    margin: 1vh;
     margin-top: 2vh;
     border: 1px solid rgb(174, 174, 174);
     box-shadow: 2px 2px rgb(223, 223, 223);
-    border-radius: 1%;
+    border-radius: 1.5%;
 }
 #img-container {
     overflow: hidden;
@@ -104,6 +105,7 @@ ul {
     font-family: arial;
     color: grey;
     height: 3vh;
+    min-height: 20px;
     width: 27vw;
     display: flex;
     justify-content: center;
@@ -127,11 +129,11 @@ ul {
     height: 100%;
 }
 ul {
-    margin: auto;
+    margin: 1vh;
     margin-top: 2vh;
     border: 1px solid rgb(174, 174, 174);
     box-shadow: 2px 2px rgb(223, 223, 223);
-    border-radius: 1%;
+    border-radius: 1.5%;
 }
 #img-container {
     overflow: hidden;
@@ -163,6 +165,7 @@ ul {
     color: grey;
     font-family: arial;
     height: 3vh;
+    min-height: 20px;
     width: 17vw;
     display: flex;
     justify-content: center;
