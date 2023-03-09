@@ -17,8 +17,8 @@ ul {
 }
 #img-container {
     overflow: hidden;
-    height: 22vh;
-    min-height: 200px;
+    height: 18vh;
+    min-height: 180px;
     width: 40vw;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ ul {
     font-weight: bold;
     color: rgb(68, 68, 68);
     min-height: 30px;
-    height: 4vh;
+    height: 3vh;
     width: 40vw;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@ ul {
 
 }
 
-@media (min-width: 700px) and (max-width: 1200px)
+@media (min-width: 700px) and (max-width: 1100px)
 {
 #cards-container {
     display: grid;
@@ -78,8 +78,8 @@ ul {
 #img-container {
     overflow: hidden;
     height: 22vh;
-    min-height: 200px;
-    width: 27vw;
+    min-height: 175px;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,9 +89,9 @@ ul {
     font-family: arial;
     font-weight: bold;
     color: rgb(68, 68, 68);
-    min-height: 30px;
+    min-height: 35px;
     height: 4vh;
-    width: 27vw;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +106,7 @@ ul {
     color: grey;
     height: 3vh;
     min-height: 20px;
-    width: 27vw;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,15 +118,15 @@ ul {
 
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1100px)
 {
 #cards-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+
     background-color: transparent;
     width: 100vw;
     height: 100%;
+
+
 }
 ul {
     margin: 1vh;
@@ -136,10 +136,12 @@ ul {
     border-radius: 1.5%;
 }
 #img-container {
+
     overflow: hidden;
     height: 22vh;
     min-height: 200px;
     width: 17vw;
+    min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,12 +154,14 @@ ul {
     min-height: 30px;
     height: 4vh;
     width: 17vw;
+    min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column: 1 / span 10;
     grid-row: 8 / span 2;
-    font-size: 1vw;
+    font-size: .9vw;
+    
     list-style: none;
 }
 
@@ -167,6 +171,7 @@ ul {
     height: 3vh;
     min-height: 20px;
     width: 17vw;
+    min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;

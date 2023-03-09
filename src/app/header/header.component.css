@@ -1,8 +1,10 @@
 #header {
     width: 100vw;
-    min-height: 200px;
-    height: 30vh;
-    background-color: grey;
+    min-width: 200px;
+    height: 28vh;
+    min-height: 180px;
+    overflow: hidden;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
