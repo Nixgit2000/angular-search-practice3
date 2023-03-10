@@ -1,6 +1,52 @@
-<div style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
- <ul  id="ul" *ngFor="let dataPoints of data">
-    <div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
-    <div id="title"><li>{{dataPoints.title}}</li></div>
-    <div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+
+<div *ngIf="allMoviesSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of allMovies  | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
+
+<div *ngIf="fantasySearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of fantasy   | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
+
+<div *ngIf="actionSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of action  | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
+
+
+
+<div *ngIf="sciFiSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of sciFi  | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
+
+<div *ngIf="comicBookSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of comicBook  | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
+
+<div *ngIf="horrorSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of horror  | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+</div>
+
+<div *ngIf="criticallyAcclaimedSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<ul  id="ul" *ngFor="let dataPoints of criticallyAcclaimed  | search: searchText">
+<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div id="title"><li>{{dataPoints.title}}</li></div>
+<div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
 </div>

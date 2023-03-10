@@ -18,7 +18,7 @@ ul {
 #img-container {
     overflow: hidden;
     height: 18vh;
-    min-height: 180px;
+    min-height: 150px;
     width: 40vw;
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@ ul {
     align-items: center;
     grid-column: 1 / span 10;
     grid-row: 8 / span 2;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     list-style: none;
 }
 
@@ -112,7 +112,7 @@ ul {
     align-items: center;
     grid-column: 1 / span 10;
     grid-row: 10 / span 1;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     list-style: none;
 }
 
