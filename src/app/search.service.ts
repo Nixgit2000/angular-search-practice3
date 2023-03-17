@@ -13,6 +13,7 @@ export class SearchService {
   public horrorSearch= false
   public criticallyAcclaimedSearch = false
 
+
   allMoviesFn() {
     this.allMoviesSearch = true
     this.fantasySearch = false

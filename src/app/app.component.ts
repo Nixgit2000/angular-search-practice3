@@ -8,4 +8,7 @@ import { NgModule } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-search3';
+  collection = []
+
+  
 }

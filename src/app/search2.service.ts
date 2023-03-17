@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Search2Service {
-public searchText = 'star'
+public searchText = ''
 
   searchTextFn() {
     this.searchText

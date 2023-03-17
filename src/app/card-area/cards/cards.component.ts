@@ -23,11 +23,21 @@ export class CardsComponent {
 
   }
 
+clicked1 = false
+clicked2 = true
+clicked3 = true
+clicked4 = true
+clicked5 = true
+clicked6 = true
+clicked7 = true
+clicked8 = true
+clicked9 = true
 
   get allMoviesSearch() {
     return this.searching.allMoviesSearch
 
   }
+
   get fantasySearch() {
     return this.searching.fantasySearch
 

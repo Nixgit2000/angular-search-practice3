@@ -1,10 +1,272 @@
 
 
-<div *ngIf="allMoviesSearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
-<ul  id="ul" *ngFor="let dataPoints of allMovies  | search: searchText">
-<div id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
-<div id="title"><li>{{dataPoints.title}}</li></div>
+<div *ngIf="allMoviesSearch"  style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
+<div id="pagination-buttons" style="display: flex; justify-content: center; align-items: center; width: 100vw; height: 6vh; margin-top: 2vh;">
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = false"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>1</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = false"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>2</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = false"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>3</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = false"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>4</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = false"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>5</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = false"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>6</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = false"
+(click)="clicked8 = true"
+(click)="clicked9 = true"
+>7</button>
+
+<button style="width: 100px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = false"
+(click)="clicked9 = true"
+>8</button>
+
+<button style="width: 300px; height: 4vh;"
+(click)="clicked1 = true"
+(click)="clicked2 = true"
+(click)="clicked3 = true"
+(click)="clicked4 = true"
+(click)="clicked5 = true"
+(click)="clicked6 = true"
+(click)="clicked7 = true"
+(click)="clicked8 = true"
+(click)="clicked9 = false"
+>DISPLAY ALL TO SEARCH</button>
+</div>
+
+<ul [hidden]="clicked9" id="ul" *ngFor="let dataPoints of allMovies.slice(0,200) | search: searchText">
+    <div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+    <div  id="title"><li>{{dataPoints.title}}</li></div>
+    <div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked1" id="ul" *ngFor="let dataPoints of allMovies.slice(0,15) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
 <div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+
+
+<ul [hidden]="clicked2" id="ul" *ngFor="let dataPoints of allMovies.slice(15,30) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
+<div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked3" id="ul" *ngFor="let dataPoints of allMovies.slice(30,45) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
+<div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked4" id="ul" *ngFor="let dataPoints of allMovies.slice(45,60) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
+<div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked5" id="ul" *ngFor="let dataPoints of allMovies.slice(60,75) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
+<div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked6" id="ul" *ngFor="let dataPoints of allMovies.slice(75,90) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
+<div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked7" id="ul" *ngFor="let dataPoints of allMovies.slice(90,105) | search: searchText">
+<div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+<div  id="title"><li>{{dataPoints.title}}</li></div>
+<div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+<ul [hidden]="clicked8" id="ul" *ngFor="let dataPoints of allMovies.slice(105,120) | search: searchText">
+    <div  id="img-container"><img style="height: 100%;" src="{{dataPoints.pic}}" alt=""></div>
+    <div  id="title"><li>{{dataPoints.title}}</li></div>
+    <div  id="title2"><li>{{dataPoints.title2}}</li></div></ul>
+
+    <div id="pagination-buttons" style="display: flex; justify-content: center; align-items: center; width: 100vw; height: 6vh; margin: 2vh;">
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = false"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >1</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = false"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >2</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = false"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >3</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = false"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >4</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = false"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >5</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = false"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >6</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = false"
+        (click)="clicked8 = true"
+        (click)="clicked9 = true"
+        >7</button>
+        
+        <button style="width: 100px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = false"
+        (click)="clicked9 = true"
+        >8</button>
+        
+        <button style="width: 300px; height: 4vh;"
+        (click)="clicked1 = true"
+        (click)="clicked2 = true"
+        (click)="clicked3 = true"
+        (click)="clicked4 = true"
+        (click)="clicked5 = true"
+        (click)="clicked6 = true"
+        (click)="clicked7 = true"
+        (click)="clicked8 = true"
+        (click)="clicked9 = false"
+        >DISPLAY ALL TO SEARCH</button>
+        </div>
 </div>
 
 <div *ngIf="fantasySearch" style="margin: 0px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="cards-container" >
@@ -50,3 +312,4 @@
 <div id="title"><li>{{dataPoints.title}}</li></div>
 <div id="title2"><li>{{dataPoints.title2}}</li></div></ul>
 </div>
+
